@@ -191,7 +191,7 @@ int main() {
         //rectangle1.animate(elapsed);
 
 
-      //  window.draw(rectangle1);
+ window.draw(rectangle1);
 //        for(auto &rec : rectangles){
 //            if(rec.isClicked(position)==true){
 //                            rec.setFillColor(sf::Color(100, 255, 200));}
