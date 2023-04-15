@@ -133,28 +133,28 @@ int main() {
 
     // create some shapes
 
-//    CustomRectangleShape rectangle1(sf::Vector2f(100.0, 80.0), sf::Vector2f(120.0, 60.0));
-//    rectangle1.setFillColor(sf::Color(100, 150, 250));
-//    rectangle1.setSpeed(100, 150, 10);
-//    rectangle1.setBounds(0, window.getSize().x, 0, window.getSize().y);
+   CustomRectangleShape rectangle1(sf::Vector2f(100.0, 80.0), sf::Vector2f(120.0, 60.0));
+   rectangle1.setFillColor(sf::Color(100, 150, 250));
+   rectangle1.setSpeed(100, 150, 10);
+   rectangle1.setBounds(0, window.getSize().x, 0, window.getSize().y);
 
     std::srand(std::time(nullptr));
 
-    std::vector<CustomRectangleShape> rectangles;
+//    std::vector<CustomRectangleShape> rectangles;
 
-    for(int i=0; i<10; i++)
-    {
-        sf::Vector2f size(120.0, 60.0);
-        sf::Vector2f position(std::rand() % (window.getSize().x - 120), std::rand() % (window.getSize().y - 60));
-        rectangles.emplace_back(CustomRectangleShape(size, position));
-    }
+//     for(int i=0; i<10; i++)
+//     {
+//         sf::Vector2f size(120.0, 60.0);
+//         sf::Vector2f position(std::rand() % (window.getSize().x - 120), std::rand() % (window.getSize().y - 60));
+//         rectangles.emplace_back(CustomRectangleShape(size, position));
+//     }
 
-    for(auto &rec : rectangles)
-    {
-        rec.setFillColor(sf::Color(0, 255, 0));
-        rec.setBounds(0, window.getSize().x, 0, window.getSize().y);
-        rec.setSpeed(100, 200, 10);
-    }
+//     for(auto &rec : rectangles)
+//     {
+//         rec.setFillColor(sf::Color(0, 255, 0));
+//         rec.setBounds(0, window.getSize().x, 0, window.getSize().y);
+//         rec.setSpeed(100, 200, 10);
+//     }
 
     sf::Clock clock;
 
@@ -177,13 +177,13 @@ int main() {
 
         sf::Vector2i position = sf::Mouse::getPosition(window);
 
-//        //rectangle1.isClicked(position);
-//        if (rectangle1.isClicked(position) == true){
-//            rectangle1.setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256));
-//           // std::cout << rectangle_bounds.height << " " << rectangle_bounds.top << " " << rectangle_bounds.left << " " << rectangle_bounds.width << " " << std::endl;
-//        }
+       //rectangle1.isClicked(position);
+       if (rectangle1.isClicked(position) == true){
+           rectangle1.setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256));
+          // std::cout << rectangle_bounds.height << " " << rectangle_bounds.top << " " << rectangle_bounds.left << " " << rectangle_bounds.width << " " << std::endl;
+       }
 
-//        rectangle1.moveInDirection(elapsed, event.key.code);
+       rectangle1.moveInDirection(elapsed, event.key.code);
 
         // clear the window with black color
         window.clear(sf::Color::Black);
@@ -203,13 +203,13 @@ int main() {
 //            }
 
 
-        for(auto &rec : rectangles)
-        {  if(rec.isClicked(position)==false){
-              rec.setFillColor(sf::Color(100, 255, 200));
+//         for(auto &rec : rectangles)
+//         {  if(rec.isClicked(position)==true){
+//               rec.setFillColor(sf::Color(100, 255, 200));
 
-            rec.moveInDirection(elapsed,event.key.code);}
-             window.draw(rec);
-            }
+//             rec.moveInDirection(elapsed,event.key.code);}
+//              window.draw(rec);
+//             }
 
         // end the current frame
         window.display();
