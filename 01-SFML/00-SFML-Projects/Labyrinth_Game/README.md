@@ -1,6 +1,6 @@
 # Labyrinth Game
 
-## Game Usung SFML 
+## Game Using SFML 
 
  It is a simple game in which a character is moved using the arrow keys on the keyboard. The game window has a grass background, and there are walls surrounding the game area.
 
