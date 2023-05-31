@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Assignment 2
+
 class CustomRectangleShape : public sf::RectangleShape
 {
 public:
@@ -35,7 +35,7 @@ public:
         right_ = r;
     }
 
-    // Final Assignment 1 - Moving Rectangle with keyboard
+    //  Moving Rectangle with keyboard
     void moveInDirection(const sf::Time &elapsed, const sf::Keyboard::Key &key)
     {
         sf::FloatRect bounds = getGlobalBounds();
@@ -117,7 +117,7 @@ private:
     }
 };
 
-// Assigment 5
+
 void change_color(sf::RectangleShape &rectangle)
 {
     rectangle.setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256));
@@ -159,12 +159,12 @@ int main()
 
         sf::Time elapsed = clock.restart();
 
-        // Assignment 2
+        
         rectangle.animate(elapsed);
         rectangle2.animate(elapsed);
 //        rectangle3.animate(elapsed);
 
-        // FA 1
+       
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
         {
             rectangle3.moveInDirection(elapsed, sf::Keyboard::Up);
@@ -219,7 +219,7 @@ int main()
 //                std::cout << "Holding space button" << std::endl;
 //            }
 
-            // FA 1
+       
             if(event.type == sf::Event::MouseButtonPressed)
             {
                 if(event.mouseButton.button == sf::Mouse::Left)

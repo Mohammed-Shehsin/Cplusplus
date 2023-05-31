@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-// Assignment 2
+//Inherited class from RectangleShape
 class CustomRectangleShape : public sf::RectangleShape
 {
 public:
@@ -44,7 +44,7 @@ public:
         right_ = r;
     }
 
-    // Final Assignment 1 - Moving Rectangle with keyboard
+    //  Moving Rectangle with keyboard
     void moveInDirection(const sf::Time &elapsed, const sf::Keyboard::Key &key)
     {
         sf::FloatRect bounds = getGlobalBounds();
@@ -139,7 +139,7 @@ private:
     }
 };
 
-// Assigment 5
+// Change color 
 void change_color(sf::RectangleShape &rectangle)
 {
     rectangle.setFillColor(sf::Color(rand() % 256, rand() % 256, rand() % 256));
@@ -181,7 +181,7 @@ int main()
 
         sf::Time elapsed = clock.restart();
 
-        // FA 1 - Move the rectangles when selected
+        //  Move the rectangles when selected
         for(auto &rec : rectangles)
         {
             if(rec.getSelected() == false) continue;

@@ -1,6 +1,6 @@
-# Labyrinth Game
+# 🎮 Labyrinth Game
 
-## Game Using SFML 
+## 💻 Game Using SFML 
 
  It is a simple game in which a character is moved using the arrow keys on the keyboard. The game window has a grass background, and there are walls surrounding the game area.
 
@@ -9,13 +9,13 @@ The code uses the `SFML library` for graphics and window management. The game lo
 The main function creates the game window, loads the textures for the `grass, wall, and guy` sprites, and creates the wall sprites. The game loop repeatedly draws the grass and wall sprites, and updates the player sprite based on the user input and collision detection
 
 
-### The video of  game :
+### 📺 The video of  game :
 
 
 [![Alt Text](https://img.youtube.com/vi/OpoR2BLu6Kk/0.jpg)](https://www.youtube.com/watch?v=OpoR2BLu6Kk)
 
-#### YouTube link : https://www.youtube.com/shorts/OpoR2BLu6Kk.
+#### 🔗 YouTube link : https://www.youtube.com/shorts/OpoR2BLu6Kk.
 
 Subscribe and Link the Channel.
       
-Author : *Mohammed Shehsin Thamarachalil Abdulresak*
+🧑 Author : *Mohammed Shehsin Thamarachalil Abdulresak*
